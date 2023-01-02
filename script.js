@@ -1,0 +1,1 @@
+api="https://freeipapi.com/api/json";var ip=document.getElementById("ip"),country=document.getElementById("country"),region=document.getElementById("region");function getIp(){fetch(api).then(e=>e.json().then(e=>{ip.innerHTML="Ip: "+e.ipAddress,country.innerHTML="Country: "+e.countryName,region.innerHTML="Region: "+e.regionName}))}
